@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{  asset('css/estilos.css') }}">
 
         <title>Laravel</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -24,23 +25,27 @@
 
         </style>
     </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+    <body>
+        <header>
             @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                <div class="menu">
+                    <a href="#" class="texto"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9XqpagykdXIyDmrNpRNoAaEPAaGjEWccEQ&usqp=CAU" alt="" class="logo"></a>
+                    <nav class="login">
+                        <ul>
+                        @auth
+                            @else
+                                <li><a href="{{ route('login') }}" class="ml-4 text-sm">Ingresar</a></li>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+                            @if (Route::has('register'))
+                                <li><a href="{{ route('register') }}" class="ml-4 text-sm">Registrarse</a></li>
+                            @endif
+                        @endauth
+                        </ul>
+                    </nav>
                 </div>
             @endif
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -48,13 +53,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="https://scontent.flim2-1.fna.fbcdn.net/v/t39.30808-6/299876588_432741215538042_787822981120133401_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHQI2MX_avyqi7rdyFhisGfyJiLVuDNBKzImItW4M0ErFV8j4mFo1ikadjNvTJVNa0EGvx1L07PVn2YFF2OJIL1&_nc_ohc=4x8jCiQurqEAX_RCxNb&_nc_zt=23&_nc_ht=scontent.flim2-1.fna&oh=00_AfDZzErmWtKuXed3-_CN12pUuRpQXBSkVXJtj0XrVJDRyw&oe=6373BA53" class="d-block w-100" alt="...">
+                    <img src="https://0b737821bc.cbaul-cdnwnd.com/44a796af8d54c804c3f64c55e4231b1f/200000430-ac5c2ad563/IMG_1897.jpg" class="imagen" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="https://cdn.www.gob.pe/uploads/document/file/2257884/standard_velo%20de%20la%20novia%20%284%29.jpeg.jpeg" class="d-block w-100" alt="...">
+                    <img src="https://cdn.www.gob.pe/uploads/document/file/2257884/standard_velo%20de%20la%20novia%20%284%29.jpeg.jpeg" class="imagen" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="https://0b737821bc.cbaul-cdnwnd.com/44a796af8d54c804c3f64c55e4231b1f/200000430-ac5c2ad563/IMG_1897.jpg" class="d-block w-100" alt="...">
+                    <img src="https://scontent.flim2-1.fna.fbcdn.net/v/t39.30808-6/299876588_432741215538042_787822981120133401_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHQI2MX_avyqi7rdyFhisGfyJiLVuDNBKzImItW4M0ErFV8j4mFo1ikadjNvTJVNa0EGvx1L07PVn2YFF2OJIL1&_nc_ohc=4x8jCiQurqEAX_RCxNb&_nc_zt=23&_nc_ht=scontent.flim2-1.fna&oh=00_AfDZzErmWtKuXed3-_CN12pUuRpQXBSkVXJtj0XrVJDRyw&oe=6373BA53" class="imagen" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -65,7 +70,6 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-            </div>
-        </div>
+        </div> 
     </body>
 </html>
