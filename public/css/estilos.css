@@ -1,6 +1,8 @@
 .menu{
-    width: 900px;
-    margin: 0 auto;
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    margin: 0 200px;
+    padding-right: 250px;
 }
 header{
     background: #ffffff;
@@ -14,13 +16,17 @@ header{
     height: 50px;
     float: left;
     padding: 8px;
-}  
+} 
+.login{
+    margin-left: 100px;
+    float: right;
+}
 nav{
     float: right;
 }
 nav ul li{
     list-style: none;
-    margin-left: 75px;
+    margin-left: 20px;
     padding: 12px 0;
     float: left;
     position: relative;
@@ -63,6 +69,7 @@ nav ul li a:hover::before{
     padding-top: 20%;
 }
 .hola{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 90px;
 }
 #carrusel2{
