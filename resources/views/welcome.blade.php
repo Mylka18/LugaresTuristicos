@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{  asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{  asset('css/estilos.css') }}">
 
         <title>Laravel</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -53,13 +53,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" id="carrusel1">
-                    <h2>Contemplando</h2>
+                    <h3 class="hola">Parroquia San Sebastián</h3>
                 </div>
                 <div class="carousel-item" id="carrusel2">
-                    <h2>Huanuco</h2>
+                    <h3 class="hola">Laguna Milagros</h3>
                 </div>
                 <div class="carousel-item" id="carrusel3">
-                    <h2>Machu Picchu</h2>
+                    <h3 class="hola">Tingo Maria</h3>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -76,11 +76,11 @@
         <section>
             <div class="contenedor">
                 <div class="a">
-                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" alt="" class="imgfondo1">
+                    <img src="images/cuevalechuza.jpg" alt="" class="imgfondo1">
                     <div class="texto1">
-                        <h2>Explore The World with Us</h2>
-                        <p>Etiam faucibus nulla vitae arcu ultricies cursus ac eu tellus. Mauris bibendum consectetur lectus ut molestie. Nunc ornare lacus augue. estibulum ultricies magna in vestibulum pulvinar. Integer id erat dui. Quisque condimentum pulvinar
-                        tellus in varius. Duis tincidunt nibh et nibh accumsan.</p>
+                        <h1 class="titulo">Huánuco la Ciudad del Mejor Clima del Mundo</h1>
+                        <p>La región Huánuco posee importantes atractivos turísticos, cuenta con nevados, cordilleras, cálidos valles y selvas amazónicas. Así mismo, posee ruinas arqueológicas, templos coloniales y especialmente un magnífico clima que es considerado como uno de los mejores del mundo. Plaza de armas. 
+                            Fue construida en 1845.</p>
                     </div>
                 </div>
                 <div class="b">
@@ -88,45 +88,52 @@
                         <div class="superior">
                             <div class="grupo">
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/con-la-perricholi.jpg" class="x">
                                 </div>
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/images.jpg" class="x">
                                 </div>
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/carpish.jpg" class="x">
                                 </div>
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/garu.jpg" class="x">
                                 </div>
                             </div>
                         </div>
                         <div class="inferior">
                             <div class="grupo">
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/vista.jpg" class="x">
                                 </div>
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/tingo.jpg" class="x">
                                 </div>
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/laguna.jpg" class="x">
                                 </div>
                                 <div class="turi">
-                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                    <img src="images/img.jpg" class="x">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="images/dea5d4d2d095d58e593af6c3ec9ef7a3.jpeg" alt="" class="imgfondo2">
-                <div class="c">
-                    <div class="texto2">
-                        <p>Morbi pellentesque orci at tortor faucibus, blandit tempor dolor tempor. Morbi tellus diam, iaculis vel odio vel, facilisis rhoncus purus. Etiam dapibus, purus nec tristique venenatis, nisi ex malesuada mi, id ultrices nunc mauris
-                        a mi</p>
-                    </div>
+            </div>
+            <div class="c">
+                <img src="images/Puente_Calicanto.jpg" alt="" class="imgfondo2">
+            
+                <div class="texto2">
+                <h1 class="titulo">Puente Calicanto</h1>
+                    <p>Fue construido con piedras, ladrillos y una mezcla de cal y huevos como elemento aglutinante. La estructura midió 202 mt. de largo, con más de 12 mt. de altura sobre el río, afirmados sobre cimientos de 4,2 mt. de profundidad. 
+                        Sobre el puente se observaban nueve arcos, que enmarcaban una calzada de 8,4 mt. de ancho.</p>
                 </div>
             </div>
         </section>
+        <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-e77f">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <p class="u-small-text u-text u-text-variant u-text-1">Texto de muestra. Haz click para seleccionar el elemento de Texto.</p>
+            </div>
+        </footer>
     </body>
 </html>
