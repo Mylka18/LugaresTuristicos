@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{  asset('css/estilos.css') }}">
+        <link rel="stylesheet" href="{{  asset('css/style.css') }}">
 
         <title>Laravel</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -52,14 +52,14 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://0b737821bc.cbaul-cdnwnd.com/44a796af8d54c804c3f64c55e4231b1f/200000430-ac5c2ad563/IMG_1897.jpg" class="imagen" alt="...">
+                <div class="carousel-item active" id="carrusel1">
+                    <h2>Contemplando</h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://cdn.www.gob.pe/uploads/document/file/2257884/standard_velo%20de%20la%20novia%20%284%29.jpeg.jpeg" class="imagen" alt="...">
+                <div class="carousel-item" id="carrusel2">
+                    <h2>Huanuco</h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://scontent.flim2-1.fna.fbcdn.net/v/t39.30808-6/299876588_432741215538042_787822981120133401_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHQI2MX_avyqi7rdyFhisGfyJiLVuDNBKzImItW4M0ErFV8j4mFo1ikadjNvTJVNa0EGvx1L07PVn2YFF2OJIL1&_nc_ohc=4x8jCiQurqEAX_RCxNb&_nc_zt=23&_nc_ht=scontent.flim2-1.fna&oh=00_AfDZzErmWtKuXed3-_CN12pUuRpQXBSkVXJtj0XrVJDRyw&oe=6373BA53" class="imagen" alt="...">
+                <div class="carousel-item" id="carrusel3">
+                    <h2>Machu Picchu</h2>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,6 +70,63 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div> 
+        </div>
+
+        <!--segunda parte-->
+        <section>
+            <div class="contenedor">
+                <div class="a">
+                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" alt="" class="imgfondo1">
+                    <div class="texto1">
+                        <h2>Explore The World with Us</h2>
+                        <p>Etiam faucibus nulla vitae arcu ultricies cursus ac eu tellus. Mauris bibendum consectetur lectus ut molestie. Nunc ornare lacus augue. estibulum ultricies magna in vestibulum pulvinar. Integer id erat dui. Quisque condimentum pulvinar
+                        tellus in varius. Duis tincidunt nibh et nibh accumsan.</p>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="contenedorimagenes">
+                        <div class="superior">
+                            <div class="grupo">
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inferior">
+                            <div class="grupo">
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                                <div class="turi">
+                                    <img src="images/a5eeeeab792fa34ec05a61c2fb9afbc0.jpeg" class="x">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/dea5d4d2d095d58e593af6c3ec9ef7a3.jpeg" alt="" class="imgfondo2">
+                <div class="c">
+                    <div class="texto2">
+                        <p>Morbi pellentesque orci at tortor faucibus, blandit tempor dolor tempor. Morbi tellus diam, iaculis vel odio vel, facilisis rhoncus purus. Etiam dapibus, purus nec tristique venenatis, nisi ex malesuada mi, id ultrices nunc mauris
+                        a mi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
